@@ -16,11 +16,9 @@ public class AddDeleteTest {
 
         driver.findElement(By.xpath("//button[text()='Add Element']")).click();
         driver.findElement(By.xpath("//button[text()='Add Element']")).click();
-
         driver.findElement(By.xpath("//button[text()='Delete']")).click();
 
         int count = driver.findElements(By.xpath("//button[text()='Delete']")).size();
-
         Assert.assertEquals(count,1);
     }
 }
